@@ -11,7 +11,7 @@ from langchain_elasticsearch.vectorstores import ElasticsearchStore
 
 
 class RAG_class:
-    def __init__(self, model="qwen2:7b", embed="mofanke/acge_text_embedding:latest", c_name="sss1",
+    def __init__(self, model="llama3:8b", embed="mofanke/acge_text_embedding:latest", c_name="sss1",
                  persist_directory="./Chroma_db/",es_url="http://localhost:9200"):
         template = """
         根据上下文回答以下问题,不要自己发挥，要根据以下参考内容总结答案，如果以下内容无法得到答案，就返回无法根据参考内容获取答案，
