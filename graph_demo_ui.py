@@ -48,7 +48,7 @@ def generate_graph_info(raw_text: str) -> str | None:
     :return:
     """
     messages = [
-        {"role": "system", "content": "你现在扮演信息抽取的角色，要求根据用户输入和AI的回答，正确提取出信息,记得不多对实体进行翻译。"},
+        {"role": "system", "content": "你现在扮演信息抽取的角色，要求根据用户输入和AI的回答，正确提取出信息,记得对实体进行翻译。"},
         {"role": "user", "content": raw_text},
         {"role": "user", "content": __retriever_prompt}
     ]
